@@ -4,11 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- icon link -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
     <!-- Tailwind & Daidyui link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div ></div>
+    <div class="w-full h-screen bg-black">
+        <div class="imgContainer w-full h-screen relative">
+            <div class="mainCard z-[3] w-full absolute h-screen bg-orange-600">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1674049405160-9b800f5645f5?q=80&w=1524&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="pic">
+            </div>
+            <div class="inComingCard z-[2] w-full absolute h-screen bg-green-600"></div>
+        </div>
+        <div class="absolute top-0 left-0 z-[4] w-full h-screen  px-5 py-6">
+            <div class="navBar flex justify-between items-center">
+                <div class="img w-[3rem] h-[3rem] bg-red-600 rounded-full overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="pic" >
+                </div>
+                <h3 class="capitalize text-xl font-medium text-white">DevX</h3>
+                <div class="chatIcon flex items-center relative justify-center w-[3rem] h-[3rem] bg-white/50 rounded-full">
+                    <i class="opacity-80 ri-chat-3-fill text-xl"></i>
+                    <div class="badge flex items-center justify-center rounded-full absolute w-5 h-5 bg-red-500 top-0 right-0 -translate-x-[3px] -translate-y-[5px]">
+                        <h5 class=" text-xs font-medium">5</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
